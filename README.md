@@ -85,9 +85,9 @@ Report errors and questions on the [GitHub issues page](https://github.com/Domin
 ## Citation
 
 ```bibtex
-@inproceedings{[key]2026reins,
+@inproceedings{ding2026reins,
   title     = {REINS: Learning Inertia-Induced Geometry for Physics-Consistent Motion Representation in Clinical Gait Phenotyping},
-  author    = {[Ding, Yiran and Zhang, Yufei and Cui, Zijun]},
+  author    = {Ding, Yiran and Zhang, Yufei and Cui, Zijun},
   booktitle = {Advances in Neural Information Processing Systems (NeurIPS)},
   year      = {2026}
 }
