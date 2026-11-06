@@ -8,7 +8,8 @@ Yiran Ding<sup>1</sup>, Yufei Zhang<sup>2</sup>, Zijun Cui<sup>1</sup>
 
 <sup>1</sup>Michigan State University &nbsp; <sup>2</sup>Independent Researcher
 
-<!--[![Paper](https://img.shields.io/badge/Paper-OpenReview-8c1b13?style=for-the-badge)](https://openreview.net/forum?id=[ID])  -->[![License: MIT](https://img.shields.io/badge/License-MIT-blue?style=for-the-badge)](LICENSE)
+<!--[![Paper](https://img.shields.io/badge/Paper-OpenReview-8c1b13?style=for-the-badge)](https://openreview.net/forum?id=[ID])  -->
+<a href="LICENSE"><img src="https://img.shields.io/badge/License-MIT-blue?style=for-the-badge" alt="License: MIT"></a>
 
 <img src="assets/pipeline.png" width="100%" alt="Fig. 1. Overview of REINS. Training: a pose sequence is encoded and reconstructed, and the inertia-consistent loss weights the reconstruction velocity error by the inertia matrix M(q). Testing: a test sequence is scored by its Riemannian distance to the healthy-control reference embeddings.">
 
