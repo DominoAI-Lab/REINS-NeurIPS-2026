@@ -16,7 +16,6 @@ Yiran Ding<sup>1</sup>, Yufei Zhang<sup>2</sup>, Zijun Cui<sup>1</sup>
 <sub><b>Fig. 1.</b> Overview of REINS. Training (left): a pose sequence is encoded into a latent vector and reconstructed by the decoder. The inertia-consistent loss weights the reconstruction velocity error by the body's inertia matrix <i>M</i>(<i>q</i>), so that the latent space inherits the inertia-induced geometry (surface). Distances between embedded sequences <i>z</i><sup>a</sup> and <i>z</i><sup>b</sup> are measured by the Riemannian distance under this geometry. Testing (right): a test sequence is embedded as <i>z</i><sup>*</sup>. The inertia matrix <i>M</i>(<i>q&#770;</i>) of its decoded pose defines the local metric, and the sequence is scored by its Riemannian distance <i>d</i><sub>Riem</sub> to the healthy-control (HC) reference embeddings. The score separates subjects with Parkinson's disease from healthy controls and correlates with clinical severity on cohorts not used for training. The Riemannian distance (ours) separates these groups more reliably than Euclidean distance (dashed).</sub>
 
 
-<img src="assets/fig2.png" width="100%" alt="Fig. 2. Euclidean versus inertia-induced motion geometry. (a) Euclidean trajectory space treats all directions of motion equally. (b) The inertia matrix M(q) assigns direction-dependent costs to motion, so the shortest path between two sequences and its length change.">
 
 <p align="left">
   <img src="assets/fig2.png" width="50%" align="left" alt="Fig. 2. Euclidean versus inertia-induced motion geometry.">
