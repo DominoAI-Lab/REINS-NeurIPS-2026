@@ -18,11 +18,14 @@ Yiran Ding<sup>1</sup>, Yufei Zhang<sup>2</sup>, Zijun Cui<sup>1</sup>
 
 <img src="assets/fig2.png" width="100%" alt="Fig. 2. Euclidean versus inertia-induced motion geometry. (a) Euclidean trajectory space treats all directions of motion equally. (b) The inertia matrix M(q) assigns direction-dependent costs to motion, so the shortest path between two sequences and its length change.">
 
-<sub><b>Fig. 2.</b> Euclidean versus inertia-induced motion geometry. Two pose sequences, <i>q</i><sup>a</sup> and <i>q</i><sup>b</sup>, are marked in both panels, and the solid curve is the shortest path between them under the metric used in that panel. (a) Euclidean trajectory space treats all directions of motion equally and ignores the articulated mass distribution. (b) The inertia matrix <i>M</i>(<i>q</i>) assigns direction-dependent costs to motion, so both the shortest path between the two sequences and its length change, and the length measures the mechanical effort of transforming one sequence into the other.</sub>
-
+<p align="left">
+  <img src="assets/fig2.png" width="50%" align="left" alt="Fig. 2. Euclidean versus inertia-induced motion geometry.">
+  <sub><b>Fig. 2.</b> Euclidean versus inertia-induced motion geometry. Two pose sequences, <i>q</i><sup>a</sup> and <i>q</i><sup>b</sup>, are marked in both panels, and the solid curve is the shortest path between them under the metric used in that panel. (a) Euclidean trajectory space treats all directions of motion equally and ignores the articulated mass distribution. (b) The inertia matrix <i>M</i>(<i>q</i>) assigns direction-dependent costs to motion, so both the shortest path between the two sequences and its length change, and the length measures the mechanical effort of transforming one sequence into the other.</sub>
+</p>
+<br clear="all">
 </div>
 
-This is the official PyTorch implementation of the paper [REINS: Riemannian Embedding for INertia-induced Motion Spaces](https://openreview.net/forum?id=[ID]) (NeurIPS 2026).
+This is the official PyTorch implementation of the paper [REINS: Learning Inertia-Induced Geometry for Physics-Consistent Motion Representation in Clinical Gait Phenotyping](Link will be available soon) (NeurIPS 2026).
 
 REINS is a motion representation for clinical gait assessment. We fine-tune [PhysPT](https://github.com/zhangy76/PhysPT) with an inertia-consistent loss $\mathcal{L}_{\text{ine}}$. For each test window, we measure the Riemannian distance from its embedding to the nearest healthy-control reference embedding. We compute this distance using the pullback metric $g(z) = J(z)^\top M(\hat q) J(z)$, where $J$ is the decoder Jacobian and $M(\hat q)$ is the generalized inertia matrix at the decoded poses. On [CARE-PD](https://github.com/TaatiTeam/CARE-PD), we use the scores to distinguish subjects with Parkinson's disease from healthy controls and compare the scores with clinical severity ratings.
 
